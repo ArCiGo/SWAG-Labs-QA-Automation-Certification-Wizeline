@@ -1,0 +1,14 @@
+{
+  "name": "swag_labs_assessment",
+  "version": "1.0.0",
+  "description": "Swag Labs Assessment for QA Certification sponsored by Wizeline",
+  "main": "index.js",
+  "scripts": {
+    "test-all-chrome": "testcafe chrome ./page_model/tests"
+  },
+  "author": "Armando Cifuentes González (ArCiGo)",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
