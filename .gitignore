@@ -139,7 +139,8 @@ temp/
 .history
 .ionide
 
-# Other files
+# Other files and folders
 package-lock.json
+reports/
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,node
