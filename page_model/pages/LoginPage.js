@@ -1,4 +1,5 @@
-import { Selector, t } from 'testcafe';
+import { Selector, t, Role } from 'testcafe';
+import { CREDENTIALS } from '../data/Constants';
 
 class LoginPage {
     constructor() {
