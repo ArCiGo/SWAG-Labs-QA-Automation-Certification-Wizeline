@@ -2,6 +2,7 @@ import { Selector, t } from 'testcafe';
 
 class CheckoutPage {
     constructor() {
+        this.pageTitle = Selector('div.subheader');
         this.firstNameField = Selector('#first-name');
         this.lastNameField = Selector('#last-name');
         this.postalCodeField = Selector('#postal-code');

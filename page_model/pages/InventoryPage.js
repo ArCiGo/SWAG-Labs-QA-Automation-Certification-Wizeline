@@ -5,12 +5,12 @@ import LeftSideBarComponent from '../components/LeftSideBarComponent';
 class InventoryPage {
     constructor() {
         this.pageTitle = Selector('div.product_label');
-        this.itemProductButtonLink = Selector('div.inventory_item_name');
+        this.inventoryItemNameButtonLink = Selector('div.inventory_item_name');
         this.shoppingCartButton = Selector('div.shopping_cart_container');
     }
 
-    async clickItemProduct(itemProductName) {
-        await t.click(this.itemProductButtonLink.withText(itemProductName));
+    async clickOnInventoryItem(inventoryItemName) {
+        await t.click(this.inventoryItemNameButtonLink.withText(inventoryItemName));
     }
 
     async clickOnShoppingCartButton() {

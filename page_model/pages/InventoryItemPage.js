@@ -2,7 +2,8 @@ import { Selector, t } from 'testcafe';
 
 class InventoryItemPage {
     constructor() {
-        this.itemName = Selector('.inventory_details_name');
+        this.pageTitle = Selector('div.product_label');
+        this.inventoryItemName = Selector('.inventory_details_name');
         this.addToCartButton = Selector('button.btn_primary').withText('ADD TO CART');
         this.backButton = Selector('.inventory_details_back_button');
     }
