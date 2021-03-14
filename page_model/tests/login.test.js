@@ -15,7 +15,7 @@ test('User can login with valid credentials', async t => {
     await t.expect(InventoryPage.pageTitle.exists).ok();
 });
 
-test('User can not login with invalid credentials', async t => {
+test('User can\'t login with invalid credentials', async t => {
     await LoginPage.submitLoginForm(CREDENTIALS.INVALID_USER.SAUCEDEMO_INVALID_USERNAME, CREDENTIALS.INVALID_USER.SAUCEDEMO_INVALID_PASSWORD);
 
     await t.expect(LoginPage.errorMessageInvalidCredentials.exists).ok();

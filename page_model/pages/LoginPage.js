@@ -15,10 +15,6 @@ class LoginPage {
         
         await t.click(this.loginButton);
     }
-
-    async isDisplayed() {
-        await t.expect(this.loginWrapper.exists).ok();
-    }
 }
 
 export default new LoginPage();
