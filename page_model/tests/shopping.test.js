@@ -5,14 +5,15 @@ import CartPage from '../pages/CartPage';
 import CheckoutPage from '../pages/CheckoutPage';
 import CheckoutOverviewPage from '../pages/CheckoutOverviewPage';
 import CheckoutCompletePage from '../pages/CheckoutCompletePage';
-import { CREDENTIALS, INVENTORY_ITEMS, CHECKOUT_INFO } from '../data/Constants';
+import { INVENTORY_ITEMS, CHECKOUT_INFO } from '../data/Constants';
 import { MESSAGES } from '../data/Messages';
+import { standardUserRole } from '../roles/Roles';
 
 fixture('Shopping Cart')
     .page `https://www.saucedemo.com/`
     .beforeEach(async t => {
         await t.maximizeWindow();
-        await LoginPage.submitLoginForm(CREDENTIALS.VALID_USER.SAUCEDEMO_VALID_USERNAME, CREDENTIALS.VALID_USER.SAUCEDEMO_VALID_PASSWORD);
+        await t.useRole(standardUserRole);
     });
 
 // 4. Navigate to the shopping cart
