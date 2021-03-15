@@ -4,8 +4,8 @@
   "description": "Swag Labs Assessment for QA Certification sponsored by Wizeline",
   "main": "index.js",
   "scripts": {
-    "test-all-chrome": "testcafe chrome ./page_model/tests --reporter spec:reports/results.txt",
-    "test-all": "testcafe all ./page_model/tests --reporter spec:reports/results.txt"
+    "test-all-chrome": "testcafe chrome ./page_model/tests --reporter spec:reports/results.txt -s takeOnFails=true",
+    "test-all": "testcafe all ./page_model/tests --reporter spec:reports/results.txt -s takeOnFails=true"
   },
   "author": "Armando Cifuentes González (ArCiGo)",
   "license": "ISC",

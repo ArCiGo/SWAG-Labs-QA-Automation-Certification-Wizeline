@@ -21,3 +21,17 @@ Basic SWAG Labs Automation Framework
 - [ ] Data provider for the test data
 - [x] Test data reporter
 - [x] Multi-browser testing
+
+### How to run the project
+
+```console
+/* Runs the automation in Google Chrome */
+npm run test-all-chrome
+```
+
+```console
+/* Runs the automation in all the available browsers installed in the computer */
+npm run test-all-chrome
+```
+
+**Note:** Don't forget to install the node packages (``npm i``)

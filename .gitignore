@@ -142,5 +142,6 @@ temp/
 # Other files and folders
 package-lock.json
 reports/
+screenshots/
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,node
